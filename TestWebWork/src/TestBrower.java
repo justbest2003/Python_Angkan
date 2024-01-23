@@ -25,23 +25,23 @@ class TestBrower {
         //preName.selectByVisibleText("นาย");
 		preName.selectByIndex(1);
         
-		WebElement name_input = driver.findElement(By.name("name_th"));
-		WebElement last_name_input = driver.findElement(By.name("lastname_th"));
-		WebElement name_eng_input = driver.findElement(By.name("name_en"));
-		WebElement last_name_eng_input = driver.findElement(By.name("lastname_en"));
-		WebElement id_card_input = driver.findElement(By.name("id_card"));
-		//WebElement date_input = driver.findElement(By.name("birthday"));
-		WebElement phone_input = driver.findElement(By.name("phone"));
-		WebElement email_input = driver.findElement(By.name("email"));
+	WebElement name_input = driver.findElement(By.name("name_th"));
+	WebElement last_name_input = driver.findElement(By.name("lastname_th"));
+	WebElement name_eng_input = driver.findElement(By.name("name_en"));
+	WebElement last_name_eng_input = driver.findElement(By.name("lastname_en"));
+	WebElement id_card_input = driver.findElement(By.name("id_card"));
+	//WebElement date_input = driver.findElement(By.name("birthday"));
+	WebElement phone_input = driver.findElement(By.name("phone"));
+	WebElement email_input = driver.findElement(By.name("email"));
 		
-		name_input.sendKeys("สมชาย");
-		last_name_input.sendKeys("ใจดี");
-		name_eng_input.sendKeys("Somchai");
-		last_name_eng_input.sendKeys("Jaidee");
-		id_card_input.sendKeys("0000000000000");
-		//date_input.sendKeys("28/08/2546");
-		phone_input.sendKeys("0000000000");
-		email_input.sendKeys("example@gmail.com");
+	name_input.sendKeys("สมชาย");
+	last_name_input.sendKeys("ใจดี");
+	name_eng_input.sendKeys("Somchai");
+	last_name_eng_input.sendKeys("Jaidee");
+	id_card_input.sendKeys("0000000000000");
+	//date_input.sendKeys("28/08/2546");
+	phone_input.sendKeys("0000000000");
+	email_input.sendKeys("example@gmail.com");
 		
         WebElement birthdayInput = driver.findElement(By.name("birthday"));
         birthdayInput.sendKeys("28/08/2546"); // แทน "วว/ดด/ปปปป" ด้วยวันที่ที่ต้องการ
