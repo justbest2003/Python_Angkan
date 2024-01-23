@@ -12,7 +12,7 @@ class TestBrower {
 
 	@Test
 	void testCodingMidCareer() {
-		WebDriver driver = null;
+	WebDriver driver = null;
         System.setProperty("webdriver.chrome.driver", "D:\\webdriver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.coding-midcareer.com/");
@@ -23,7 +23,7 @@ class TestBrower {
         
         Select preName = new Select(driver.findElement(By.id("pre_name_th")));
         //preName.selectByVisibleText("นาย");
-		preName.selectByIndex(1);
+	preName.selectByIndex(1);
         
 	WebElement name_input = driver.findElement(By.name("name_th"));
 	WebElement last_name_input = driver.findElement(By.name("lastname_th"));
